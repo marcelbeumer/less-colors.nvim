@@ -3,12 +3,12 @@ local M = {}
 local enabled = false
 
 local defaults = {
-  enabled = true,
+  enabled = true, -- general enable/disable
   enable_command = "LessColors",
   disable_command = "MoreColors",
   toggle_command = "LessColorsToggle",
-  commands = true,
-  autocmd = false,
+  commands = true, -- add :LessColors and :LessColorsToggle commands
+  autocmd = false, -- automatically re-apply on colorscheme change
 }
 
 local function less_colors()
